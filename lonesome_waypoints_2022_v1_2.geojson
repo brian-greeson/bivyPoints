@@ -894,5 +894,19 @@
                 ]
             }
         }
-    }
+    },
+    "layers": [
+        {
+            "id": "custom-points-layer",
+            "type": "circle",
+            "source": "bivyPoints",
+            "paint": {
+                "circle-radius": 4,
+                "circle-color": "#ff0000",
+                "circle-stroke-width": 2,
+                "circle-stroke-color": "#fff"
+            },
+            "filter": ["in", "$type", "Point"]
+        }
+    ]
 }
